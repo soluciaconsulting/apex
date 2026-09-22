@@ -107,10 +107,11 @@ a:hover {
 .hero {
     position: relative;
     color: white;
-    padding: 6rem 0;
+    padding: 0;
     text-align: center;
     overflow: hidden;
-    min-height: 600px;
+    min-height: 80vh;
+    height: 80vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -151,6 +152,18 @@ a:hover {
 .hero-content {
     max-width: 800px;
     margin: 0 auto;
+    animation: fadeInUp 1s ease-out 0.3s both;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .hero-content h2 {
@@ -212,10 +225,12 @@ a:hover {
 }
 
 .about h2 {
-    font-size: 2.2rem;
+    font-size: 2.4rem;
     margin-bottom: 3rem;
     text-align: center;
     color: var(--primary-color);
+    letter-spacing: -0.5px;
+    font-weight: 800;
 }
 
 .about-content {
@@ -226,40 +241,60 @@ a:hover {
 }
 
 .about-text h3 {
-    font-size: 1.3rem;
+    font-size: 1.35rem;
     color: var(--primary-color);
-    margin-top: 1.5rem;
-    margin-bottom: 1rem;
+    margin-top: 1.8rem;
+    margin-bottom: 1.2rem;
+    letter-spacing: -0.3px;
+    font-weight: 700;
 }
 
 .about-text h3:first-child {
     margin-top: 0;
+    font-size: 1.5rem;
 }
 
 .about-text p {
-    margin-bottom: 1rem;
-    line-height: 1.8;
+    margin-bottom: 1.3rem;
+    line-height: 1.85;
+    text-align: justify;
+    color: #4a5568;
+    font-size: 0.98rem;
+    letter-spacing: 0.3px;
 }
 
 .benefits-list {
     list-style: none;
-    margin-top: 1rem;
+    margin-top: 1.5rem;
+    padding: 1.5rem;
+    background: rgba(243, 156, 18, 0.06);
+    border-radius: 10px;
+    border-left: 4px solid var(--accent-color);
 }
 
 .benefits-list li {
-    padding: 0.5rem 0;
-    padding-left: 1.5rem;
+    padding: 0.75rem 0;
+    padding-left: 2rem;
     position: relative;
-    color: var(--text-color);
+    color: #3d4450;
+    font-size: 0.98rem;
+    line-height: 1.7;
+    margin: 0.5rem 0;
+}
+
+.benefits-list li strong {
+    color: var(--primary-color);
+    font-weight: 700;
 }
 
 .benefits-list li:before {
     content: "✓";
     position: absolute;
-    left: 0;
+    left: 0.5rem;
     color: var(--accent-color);
     font-weight: bold;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
+    top: 0.6rem;
 }
 
 .founder-card {

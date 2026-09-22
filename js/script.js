@@ -105,14 +105,17 @@ document.addEventListener('DOMContentLoaded', function() {
     const scrollElements = document.querySelectorAll('.animate-on-scroll');
     if ('IntersectionObserver' in window && scrollElements.length) {
         const io = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
+            entries.forEach((entry, index) => {
                 if (entry.isIntersecting) {
-                    entry.target.classList.add('in-view');
+                    // Stagger animation delay for multiple elements
+                    setTimeout(() => {
+                        entry.target.classList.add('in-view');
+                    }, index * 50);
                     // Unobserve to run only once
                     io.unobserve(entry.target);
                 }
             });
-        }, { threshold: 0.12 });
+        }, { threshold: 0.15 });
 
         scrollElements.forEach(el => io.observe(el));
     } else {
