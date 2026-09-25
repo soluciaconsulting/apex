@@ -85,7 +85,7 @@ a:hover {
 }
 
 .navbar {
-    padding: 0.9rem 0;
+    padding: 1.4rem 0;
 }
 
 .navbar-content {
@@ -95,6 +95,24 @@ a:hover {
 }
 
 .logo {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    flex-shrink: 0;
+}
+
+.logo-mark {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.3rem;
+    height: 2.3rem;
+    border: 2px solid var(--accent-color);
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    color: var(--accent-color);
     flex-shrink: 0;
 }
 
@@ -909,6 +927,10 @@ a:hover {
         margin-bottom: 1rem;
     }
 
+    .quality-intro {
+        text-align: justify;
+    }
+
     .quality-features {
         grid-template-columns: 1fr;
         gap: 1.5rem;
@@ -1378,12 +1400,16 @@ a:hover {
     z-index: 1;
 }
 
-.industry-card p { 
-    color: var(--text-light); 
-    line-height: 1.7; 
+.industries-grid p,
+.industry-card p {
+    color: var(--text-light);
+    line-height: 1.7;
     font-size: 0.95rem;
     position: relative;
     z-index: 1;
+    text-align: justify;
+    hyphens: auto;
+    -webkit-hyphens: auto;
 }
 
 .industry-card:hover { 
