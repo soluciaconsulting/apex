@@ -847,6 +847,10 @@ a:hover {
         height: 60vh;
     }
 
+    .desktop-break {
+        display: none;
+    }
+
     .hero-content h2 {
         font-size: 2rem;
     }
@@ -984,6 +988,7 @@ a:hover {
 
     .benefits-list li:before {
         font-size: 1rem;
+        left: 0.7rem;
     }
 
     .industry-card h3,
