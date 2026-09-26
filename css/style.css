@@ -109,9 +109,6 @@ a:hover {
     height: 2.3rem;
     border: 2px solid var(--accent-color);
     border-radius: 8px;
-    font-size: 0.9rem;
-    font-weight: 800;
-    letter-spacing: 0.5px;
     color: var(--accent-color);
     flex-shrink: 0;
 }
