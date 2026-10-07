@@ -190,7 +190,7 @@ a:hover {
     object-fit: cover;
     object-position: center;
     filter: brightness(0.7) contrast(1.1);
-    animation: heroZoom 25s ease-in-out infinite;
+    animation: heroZoom 10s ease-in-out infinite alternate;
 }
 
 @keyframes heroZoom {
