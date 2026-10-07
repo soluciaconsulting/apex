@@ -11,6 +11,7 @@
         content="Apex Carbides provides high-quality carbide and wear protection elements for industrial applications.">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
 </head>
 
 <body>
@@ -21,8 +22,11 @@
                 <div class="navbar-content">
                     <div class="logo">
                         <img class="logo-mark" src="assets/logo.jpeg" alt="Apex Carbides Logo">
-                        <h1>Apex Carbides</h1>
+                        <h1 class="sr-only">Apex Carbides</h1>
                     </div>
+                    <p class="nav-tagline" aria-label="Premium Carbide & Wear Protection Elements">
+                        <span id="typewriter" data-text="Premium Carbide & Wear Protection Elements" aria-hidden="true"></span><span class="tw-cursor" aria-hidden="true"></span>
+                    </p>
                     <ul class="nav-menu">
                         <li><a href="#home" class="nav-link">Home</a></li>
                         <li><a href="#about" class="nav-link">About Us</a></li>
@@ -44,14 +48,6 @@
             <div class="hero-overlay"></div>
             <div class="container hero-container">
                 <div class="hero-content">
-                    <h2>Premium Carbide & Wear Protection Elements</h2>
-                    <!-- <p class="hero-description">At Apex Carbides, we specialize in providing high-quality carbide and<br
-                            class="desktop-break"> wear protection elements designed to extend tool life and maximize<br
-                            class="desktop-break"> productivity in demanding industrial applications.</p> -->
-                    <div class="hero-cta">
-                        <a href="#contact" class="btn btn-primary">Contact Us</a>
-                        <a href="#about" class="btn btn-outline">Read More</a>
-                    </div>
                 </div>
             </div>
         </section>
@@ -318,6 +314,7 @@
     </footer>
 
     <script src="js/script.js"></script>
+    <script src="js/typewriter.js"></script>
 </body>
 
 </html>
